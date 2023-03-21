@@ -10,7 +10,6 @@ import 'package:instagram_clone/dashboard/home.dart';
 import 'package:instagram_clone/model/panda_pick_model/pandaPickHelper.dart';
 import 'package:instagram_clone/model/panda_pick_model/pandaPickItemModel.dart';
 
-
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
 
@@ -26,7 +25,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     final width  = MediaQuery.of(context).size.width * 1 ;
     return Scaffold(
       appBar: AppBar(
-        title: const  Text('Kompongsom City') ,
+        title: const  Text('Phnom Penh') ,
         actions: const[
           Icon(Icons.list_alt_outlined),
           Icon(Icons.shopping_bag_outlined),
@@ -237,9 +236,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               child: CircleAvatar(
                 radius: 24,
-                backgroundImage: NetworkImage('https://media-exp1.licdn.com/dms/image/C5603AQFtuW78eNazIw/profile-displayphoto-shrink_800_800/0/1567442703746?e=2147483647&v=beta&t=N5dGxws3xJIhwPM8w_i4dlX8qLmxznmVykPCTccYHj8'),
+                
+          
+                backgroundImage:AssetImage('assets/photo_2023-03-15_09-06-01.jpg' ),
+                
 
               ),
+               
             ),
             ListTile(
               title: const Text('Setting' , style: TextStyle(fontFamily: Medium , color : Colors.black)),
